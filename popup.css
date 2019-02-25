@@ -1,0 +1,49 @@
+/* General styling */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 10px;
+  background: rgb(240,240,240);
+  height: auto;
+  margin: 0;
+}
+
+body {
+  width: auto;
+  background: rgb(240,240,240);
+  margin: 0 auto;
+  padding: 2px;
+  height: inherit;
+}
+
+.outer-wrapper {
+  overflow: auto;
+  width: auto%;
+  height: auto;
+  background: rgb(240,240,240);
+}
+
+#container
+{
+    position:relative;
+}
+
+#image
+{
+    position:absolute;
+    left:0;
+    top:0;
+}
+#text
+{
+    z-index: 100;
+    position: absolute;
+    color: black;
+    font-size: 8px;
+    font-weight: bold;
+    top: -10%;
+}

@@ -1,0 +1,40 @@
+{
+
+  "manifest_version": 2,
+  "name": "MegadedeFiltro",
+  "version": "1.0",
+
+  "description": "Añade filtros a megadede para una mejor navegación.",
+
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+
+  "permissions": [
+    "storage", "tabs"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.megadede.com/*"],
+      "js": ["megafiltro.js"]
+    }
+  ],
+
+  
+
+  "browser_action": {
+    "default_icon": {
+     "32" : "icons/icon32.png"
+   },
+   "default_title": "Filtros",
+   "default_popup": "popup.html"
+ },
+
+  "applications": {
+    "gecko": {
+      "id": "quicknote-example@mozilla.org"
+    }
+  }
+}
